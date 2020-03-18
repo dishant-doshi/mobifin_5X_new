@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<FrameworkConfiguration>
+	<Configuration>
+		<ImplicitTimeout>60</ImplicitTimeout>
+		<TestIdRegex>(TC_[\w_]+_\d+)</TestIdRegex>
+		<TestAuthorRegex>(Author:\s*\w+\s\w+)</TestAuthorRegex>
+	</Configuration>
+
+	<!-- Please choose one option from below options : 1 -> Web 2 -> android 
+		3 -> IOS 4 ->pcloudy 5 ->pcloudyrunner -->
+	<MasterType>web</MasterType>
+
+	<Master>
+		<RecordVideoOfTestExecution>false</RecordVideoOfTestExecution>
+		<AutoLogDefectInJira>false</AutoLogDefectInJira>
+		<isRemoteEnable>false</isRemoteEnable>
+		<Hub>127.0.0.1</Hub>
+		<Port>4444</Port>
+		<incognito>false</incognito>
+		<appWaitActivity>com.pagofon.subscriber.activities.SplashWalkThroughActivity
+		</appWaitActivity>
+		<packageName>com.pagofon.subscriber.uat</packageName>
+	</Master>
+
+	<Admin>
+		<homeURL>http://10.10.180.79:7001/#/mobifin/home</homeURL>
+		<username>admin</username>
+		<password>Admin@mobifin#123</password>
+	</Admin>
+
+	<PCloudy>
+		<UserName>pil.qa@panamaxil.com</UserName>
+		<AccessKey>czhd8njcmmznby6xs25cv7xp</AccessKey>
+		<BookingDuration>60</BookingDuration>
+		<PlateFormName>Android</PlateFormName>
+		<AutoSelect>false</AutoSelect>
+		<PlateFormVersionFrom>6.0.0</PlateFormVersionFrom>
+		<PlateFormVersionTo>6.0.1</PlateFormVersionTo>
+		<DeviceCount>1</DeviceCount>
+		<!-- Below details are for Pcloudy runner only -->
+		<SuiteName> Mobifin_410 Subscriber mobile app</SuiteName>
+		<TestCaseName>LastFiveTransactions,BillPay</TestCaseName>
+		<AppName>Subscriber-UAT.apk</AppName>
+	</PCloudy>
+
+
+
+	<AndroidCredentials>
+		<AndroidMobileNumber>8866748524</AndroidMobileNumber>
+		<!-- <AndroidMobileNumber>7744118855</AndroidMobileNumber> -->
+		<AndroidPassword>008855</AndroidPassword>
+	</AndroidCredentials>
+
+
+	<Proxy>
+		<ProxyIP>10.10.180.131</ProxyIP>
+		<ProxyPort>8090</ProxyPort>
+	</Proxy>
+	<DataBaseDetails>
+		<IP>10.10.180.55</IP>
+		<Port>1521</Port>
+		<SID>QAMOBI</SID>
+		<UserName>Colto_Admin</UserName>
+		<Password>C01to_Adm1nP0rta1</Password>
+	</DataBaseDetails>
+
+	<!-- <DataBaseDetails> <IP>10.20.210.193</IP> <Port>1521</Port> <SID>UATMOBI</SID> 
+		<UserName>Colto_Admin</UserName> <Password>Colto_Admin</Password> </DataBaseDetails> -->
+
+	<Jira>
+		<url>http://jira.panamaxil.com:8080</url>
+		<username>gopal.gupta</username>
+		<password>Gopal123*</password>
+		<BoardName>TSS</BoardName>
+		<TomcatUrl>http://192.168.32.228:8081/springrest</TomcatUrl>
+
+		<Businessunit_name>MFS</Businessunit_name>
+		<Businessunit_key>TECHS-10</Businessunit_key>
+		<SubCategoryBU_name>MFS-Roadmap</SubCategoryBU_name>
+		<SubCategoryBU_key>TECHS-27</SubCategoryBU_key>
+		<AccountBU_name>MFS-Roadmap</AccountBU_name>
+		<AccountBU_key>TECHS-89</AccountBU_key>
+	</Jira>
+
+	<ModuleAceesForAllAccess>
+		<Modules>Settings,Product,Trust
+			Account,Agent,Merchant,Enterprise,Customer,Support,Reports
+		</Modules>
+	</ModuleAceesForAllAccess>
+
+	<ModuleAceesForOtherUser>
+		<Modules>Settings,Product,Trust
+			Account,Agent,Merchant,Enterprise,Customer,Support,Reports
+		</Modules>
+	</ModuleAceesForOtherUser>
+
+	<FCMAccount>
+		<AppKey>12-fTkuc:APA91bE2X_JMlEJUyPprubd3vfWiGUUeb33Tnr2sBgLn_VkLS_8HFxDTua1pRTQFkuwVTaFqPMTElgB6dnk_HFrqq7Ba9i-EpZ6ecptJuM0YL14fczr3H9DsZY8heirQESGgbRAn3-mn/AAAAj-fTkuc:APA91bE2X_JMlEJUyPprubd3vfWiGUUeb33Tnr2sBgLn_VkLS_8HFxDTua1pRTQFkuwVTaFqPMTElgB6dnk_HFrqq7Ba9i-EpZ6ecptJuM0YL14fczr3H9DsZY8heirQESGgbRAn3-mn/AAAAj-fTkuc:APA91bE2X_JMlEJUyPprubd3vfWiGUUeb33Tnr2sBgLn_VkLS_8HFxDTua1pRTQFkuwVTaFqPMTElgB6dnk_HFrqq7Ba9i-EpZ6ecptJuM0YL14fczr3H9DsZY8heirQESGgbRAn3-mn/AAAAj-fTkuc:APA91bE2X_JMlEJUyPprubd3vfWiGUUeb33Tnr2sBgLn_VkLS_8HFxDTua1pRTQFkuwVTaFqPMTElgB6dnk_HFrqq7Ba9i-EpZ6ecptJuM0YL14fczr3H9DsZY8heirQESGgbRAn3-mn/AAAAj-fTkuc:APA91bE2X_JMlEJUyPprubd3vfWiGUUeb33Tnr2sBgLn_VkLS_8HFxDTua1pRTQFkuwVTaFqPMTElgB6dnk_HFrqq7Ba9i-EpZ6ecptJuM0YL14fczr3H9DsZY8heirQESGgbRAn3-mn
+		</AppKey>
+	</FCMAccount>
+
+</FrameworkConfiguration>

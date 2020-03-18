@@ -1,0 +1,86 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+
+<suite name="MobiFin 4.1.0 - Admin Portal - Settings" verbose="10"
+	parallel="tests" thread-count="10">
+
+	<listeners>
+		<listener class-name='listeners.CustomizedEmailableReport' />
+		<!-- <listener class-name='listeners.AnnotationTransformer' /> -->
+	</listeners>
+
+	<parameter name="browserType" value="chrome" />
+	<parameter name="appURL" value="http://10.10.180.79:7001" />
+
+	<test name="Mobifin 5.0.0 : Framework Migration">
+		<!-- <parameter name="dataFile" -->
+		<!-- value="Dharti_Mobifin_5.0_BusinessAndCRUDData.xls" /> -->
+		<classes>
+			<class name="testCases.Default" />
+			<!-- <class name="testCases.OperatorConfigSystemOperatorEntity"> -->
+			<!-- <methods> -->
+			<!-- <include name="addSystemOperatorEntity" /> -->
+			<!-- <include name="editSystemOperatorEntity" /> -->
+			<!-- <include name="deleteSystemOperatorEntity" /> -->
+			<!-- <include name="sortSystemOperatorEntity" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+
+			<!-- <class name="testCases.OperatorConfigSystemOperatorOnboarding"> -->
+			<!-- <methods> -->
+			<!-- <include name="addSystemOperatorOnboarding" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+
+			<!-- <class name="testCases.BusinessConfigurationOperatingEntity"> -->
+			<!-- <methods> -->
+			<!-- <include name="addOperatingEntity" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+
+			<!-- <class -->
+			<!-- name="testCases.BusinessConfigurationOperatingEntityTemplate"> -->
+			<!-- <methods> -->
+			<!-- <include name="addOperatingEntityTemplate" /> -->
+			<!-- <include name="editOperatingEntityTemplate" /> -->
+			<!-- <include name="deleteOperatingEntityTemplate" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+
+			<!-- <class name="testCases.BusinessConfigurationBusinessZone"> -->
+			<!-- <methods> -->
+			<!-- <include name="addBusinessZone" /> -->
+			<!-- <include name="editBusinessZone" /> -->
+			<!-- <include name="deleteBusinessZone" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+
+			<!-- <class name="testCases.BusinessConfigurationRegionalEntity"> -->
+			<!-- <methods> -->
+			<!-- <include name="addRegionalEntity" /> -->
+			<!-- <include name="editRegionalEntity" /> -->
+			<!-- <include name="deleteRegionalEntity" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+
+			<!-- <class name="testCases.BusinessConfigurationServiceProfile"> -->
+			<!-- <methods> -->
+			<!-- <include name="addServiceProfile" /> -->
+			<!-- <include name="editServiceProfile" /> -->
+			<!-- <include name="deleteServiceProfile" /> -->
+			<!-- <include name="sortServiceProfile" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+
+			<!-- <class name="testCases.OperatorConfigRole"> -->
+			<!-- <methods> -->
+			<!-- <include name="addRole" /> -->
+			<!-- <include name="editRole" /> -->
+			<!-- <include name="deleteRole" /> -->
+			<!-- <include name="sortRole" /> -->
+			<!-- </methods> -->
+			<!-- </class> -->
+		</classes>
+	</test>
+</suite>
+	
